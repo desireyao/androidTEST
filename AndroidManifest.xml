@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yaoo.testandroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="data_Name"
+            android:value="hello my application" />
+
+        <!-- 监听app的安装、卸载、更新 -->
+        <receiver
+            android:name="com.yaoo.testandroid.e.AppReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 定时任务，service方式 -->
+        <service android:name="com.yaoo.testandroid.g.TimeService" >
+        </service>
+
+        <!-- k -->
+        <service android:name="com.yaoo.testandroid.k.services.TestService" >
+        </service>
+
+        <!-- j,aidl -->
+        <service android:name="com.yaoo.testandroid.j.services.DDService" >
+            <intent-filter>
+                <action android:name="com.yaoo.test.j.aidl.IRemoteService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <!-- 广播方式定时任务 -->
+        <receiver android:name="com.yaoo.testandroid.h.MainActivityH$alarmreceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.yaoo.testandroid.z1.MainActivityZ1"
+            android:label="@string/title_activity_main_activity_z1" >
+        </activity>
+       
+        <activity
+            android:name="com.yaoo.testandroid.z3.MainActivityZ3"
+            android:label="@string/title_activity_main_activity_z3" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

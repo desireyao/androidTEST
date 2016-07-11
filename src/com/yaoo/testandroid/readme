@@ -1,0 +1,54 @@
+1.json
+
+a.字符编码
+c.
+  1.测试定时任务，timer方式实现 
+  2.ScheduledExecutorService定时周期执行指定的任务
+  http://blog.csdn.net/liguojin1230/article/details/50159161
+
+d.获取meta-data值
+
+e.广播(监听程序的安装 卸载)
+
+f.获取所有打开的app信息
+
+h.测试定时任务，广播方式实现
+
+g.测试定时任务，用服务方式实现
+
+i.xml相关测试
+
+j.aidl 测试
+
+k.service 中的this 和 activity 不同 
+
+l.asset 测试
+
+m.http 请求 包括get post
+
+n.共享文件存储
+
+o.MyLogger 测试(可以得到行号和工具名)
+
+P.测试线程的等待时间
+
+q.获取jar包资源（非反射）
+
+r.测试通知栏
+
+s.测试popupwindow
+
+t.根据资源名称获取资源id
+
+u.测试屏幕分辨率和dp
+
+v.测试安卓网络类型，地域，ip,定位
+
+z0:json 测试
+
+z1: android 适配相关参数 
+
+z2:gif 测试
+
+
+

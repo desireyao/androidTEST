@@ -1,0 +1,12 @@
+  
+# VM的dex文件  
+*.dex  
+  
+# java的class文件  
+*.class  
+  
+# 自动生成的文件  
+bin/  
+gen/  
+  
+
