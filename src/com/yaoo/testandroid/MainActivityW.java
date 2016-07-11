@@ -28,7 +28,7 @@ public class MainActivityW extends Activity {
 		setContentView(R.layout.activity_main_activity_w);
 		
 		textview = (TextView) findViewById(R.id.textview);
-		getInfo(); //yaoh
+		getInfo(); //yaoh 07-11
 	}
 	
 	private void getInfo() {      
