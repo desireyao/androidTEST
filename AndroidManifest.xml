@@ -64,16 +64,18 @@
             android:name="com.yaoo.testandroid.z1.MainActivityZ1"
             android:label="@string/title_activity_main_activity_z1" >
         </activity>
-
+       
         <activity
-            android:name="com.yaoo.testandroid.z3.MainActivityZ3"
-            android:label="@string/title_activity_main_activity_z3" >
+            android:name="com.yaoo.testandroid.z4.MainActivityZ4"
+            android:label="@string/title_activity_main_activity_z4" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <service android:name="com.yaoo.testandroid.z4.MyIntentService"></service>
+        
     </application>
 
 </manifest>
