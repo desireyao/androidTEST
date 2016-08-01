@@ -26,7 +26,6 @@ public class MainActivityZ3 extends Activity {
 //		Log.e("TAG", array.get(0));
 //		Log.e("TAG", array.get(1));
 //		Log.e("TAG", array.get(10));
-		
 //		maps.put("key", "value");
 //		Log.e("TAG", maps.get("10"));
 		Log.e("TAG", maps.get("kk") + "");
