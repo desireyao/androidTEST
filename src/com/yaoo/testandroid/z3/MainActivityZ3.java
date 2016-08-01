@@ -15,7 +15,6 @@ import android.view.Menu;
 public class MainActivityZ3 extends Activity {
 
 	SparseArray<String> array = new SparseArray<String>();
-	
 	HashMap<String,String> maps = new HashMap<String, String>();
  	
 	@Override
