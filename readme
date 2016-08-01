@@ -51,6 +51,7 @@ z1: android 适配相关参数
 z2: gif 测试
 z3: 测试 SparseArray
 z4: IntentService
+Z5： 测试 View的事件拦截
 
 
 
