@@ -69,14 +69,14 @@
         </service>
 
         <activity
-            android:name="com.yaoo.testandroid.z5.MainActivityZ5"
-            android:label="@string/title_activity_main_activity_z5" >
+            android:name="com.yaoo.testandroid.z6.mian.MainActivityZ6"
+            android:label="@string/title_activity_main_activity_z6" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
     </application>
 
 </manifest>
