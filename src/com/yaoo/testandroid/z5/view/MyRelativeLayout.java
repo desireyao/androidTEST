@@ -14,6 +14,12 @@ public class MyRelativeLayout extends RelativeLayout{
 	}
 	
 	@Override
+	public boolean dispatchTouchEvent(MotionEvent ev) {
+		// TODO Auto-generated method stub
+		return super.dispatchTouchEvent(ev);
+	}
+	
+	@Override
 	public boolean onInterceptTouchEvent(MotionEvent ev) {
 		
 		Logger.e("onInterceptTouchEvent");

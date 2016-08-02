@@ -1,6 +1,7 @@
 1.json
 
 a.字符编码
+
 c.
   1.测试定时任务，timer方式实现 
   2.ScheduledExecutorService定时周期执行指定的任务
@@ -24,7 +25,7 @@ k.service 中的this 和 activity 不同
 
 l.asset 测试
 
-m.http 请求 包括get post
+m.http 请求包括 get post
 
 n.共享文件存储
 
