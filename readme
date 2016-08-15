@@ -35,6 +35,7 @@ z3: 测试 SparseArray
 z4: IntentService
 Z5： 测试 View的事件拦截
 z6: 测试 volley
+z7: sqlite 的封装
 
 
 
