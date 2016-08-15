@@ -7,6 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.yaoh.utils.Logger;
 import com.yaoo.testandroid.R;
 import com.yaoo.testandroid.json.Person;
 import com.yaoo.testandroid.json.Role;
@@ -28,9 +29,38 @@ public class MainJsonActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_json);
 		
-		init();  //yaoh
+//		init();  //yaoh
+		test1();
 	}
 
+	private void test1(){
+		
+		String string = "{\"key\":{}}";
+		JSONObject jo = null;
+		try {
+			 jo = new JSONObject(string);
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		String result = jo.optString("key1");
+		if(result.equals("")){
+			Logger.e("result.equals(\"\")");
+		}
+		
+		JSONArray JA = jo.optJSONArray("key1");
+		Logger.e("JA: " + JA);
+		if(result.equals("")){
+			Logger.e("result.equals(\"\")");
+		}
+		
+		Logger.e("result: " + result);
+	}
+	
+	
+	
+	
 	private void init() {
 		// TODO
 		btn = (Button) findViewById(R.id.btn);

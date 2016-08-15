@@ -69,7 +69,7 @@
         </service>
 
         <activity
-            android:name="com.yaoo.testandroid.z6.mian.MainActivityZ6"
+            android:name="com.yaoo.testandroid.z0.MainJsonActivity"
             android:label="@string/title_activity_main_activity_z6" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

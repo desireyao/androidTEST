@@ -46,7 +46,8 @@ public class VolleyManager {
 		
 		StringRequest stringRequest = new StringRequest("http://www.baidu.com",  
                 
-				new Response.Listener<String>() {  
+				new Response.Listener<String>() {
+			
 			        @Override  
                     public void onResponse(String response) { 
                         Log.d("TAG", response); 
@@ -54,6 +55,7 @@ public class VolleyManager {
                 }, 
                 
                 new Response.ErrorListener() {  
+                	
 					@Override
 					public void onErrorResponse(VolleyError error) {
 						 Log.e("TAG", error.getMessage(), error); 
@@ -86,16 +88,12 @@ public class VolleyManager {
 
 			@Override
 			public void onResponse(JSONObject response) {
-				// TODO Auto-generated method stub
-				
 			}
 			
 		}, new ErrorListener() {
 
 			@Override
 			public void onErrorResponse(VolleyError error) {
-				// TODO Auto-generated method stub
-				
 			}
 			
 		});
