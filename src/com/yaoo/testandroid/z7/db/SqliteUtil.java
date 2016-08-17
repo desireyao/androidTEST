@@ -125,12 +125,16 @@ public class SqliteUtil{
      */
     public Cursor fetchStudent(long id) throws SQLException {
         
-    	Cursor mCursor = mDb.query(true, DATABASE_TABLE, 
-    			    new String[] {KEY_ROWID,KEY_NAME, KEY_GRADE}, KEY_ROWID + "=" + id, null,
+    	Cursor mCursor = mDb.query(
+    			    true, 
+    			    DATABASE_TABLE, 
+    			    new String[] {KEY_ROWID, KEY_NAME, KEY_GRADE}, KEY_ROWID + "=" + id, null,
                     null, null, null, null);
+    	
         if (mCursor != null) {
             mCursor.moveToFirst();
         }
+        
         return mCursor;
     }
  
@@ -142,9 +146,11 @@ public class SqliteUtil{
      * @return boolean
      */
     public boolean updateStudent(int id, String name, String standard) {
+    	
         ContentValues args = new ContentValues();
         args.put(KEY_NAME, name);
         args.put(KEY_GRADE, standard);
+        
         return mDb.update(DATABASE_TABLE, args, KEY_ROWID + "=" + id, null) > 0;
     }
 }
